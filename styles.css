@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Jost', sans-serif;;
+}
+/* main outer container */
+.container{
+    width: 80vw;
+    height: 100vh;
+    /* background-color: rgb(241, 241, 241); */
+    margin: 0 10vw; 
+}
+/* muted text */
+.container .mute_Text{
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: absolute;
+    margin: 0.3rem;
+    color: red;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+}
+/* clock */
+.clock{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    color: rgb(122, 85, 40);
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    margin-bottom: 4rem;
+}
+.clock::-webkit-scrollbar{
+    display: none;
+}
+/* Add new alarm  */
+#alarm-btn{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.2rem 1rem;
+    border-radius: 3rem;
+    height: 1.5rem;
+    border: 1px solid red;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 5.5rem;
+    cursor: pointer;
+}
+/* alarms list container */
+.alarms{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 6%;
+    overflow-y: scroll;
+    height: 73vh;
+}
+.alarms::-webkit-scrollbar{
+    display: none;
+}
+/* Set alarm outer container */
+.set_alarm_container{
+    display: none;
+    margin-left: 6%;
+    overflow: scroll;
+    height: 6rem;
+    /* border: 1px solid red; */
+}
+.set_alarm_container::-webkit-scrollbar{
+    display: none;
+}
+/* set alarm inner components styling */
+.set_alarm{
+    display: flex;
+    margin-left: 4.6rem;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/* set alarm name outer container*/
+.alarm_name{
+    border: 1px solid blue;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    padding: 0.1rem 1rem;
+    width: 14rem;
+}
+/* set alarm name inner conatiner */
+.alarm_name #alarm_name{
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    /* width: 2rem; */
+    background-color: transparent;
+}
+/* set alarm time */
+.alarm_time{
+    margin-left: 2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: 1px solid blue;
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+    min-width: 5rem;
+}
+/* set alarm delete button */
+#del_set_alarm{
+    margin-left: 4.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 20px;
+}
+.bi:hover{
+    color: red;
+}
+/* set alarm submit button  */
+#submit_alarm{
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    min-width: 30px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+/* Added alarm conatiner */
+.alarms .data_alarm{
+    margin-top: 1.8rem;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/* Added alarm time */
+.alarms .data_alarm .alarms_time{
+    margin-left: 3rem;
+    width: 5rem;
+}
+/* added alarm past */
+.alarms .data_alarm .half{
+    margin-left: 0.2rem;
+    width: 1.5rem;
+}
+/* added alarm icon */
+.alarms .data_alarm .stop_alarm{
+    margin-left: 13rem;
+    cursor: pointer;
+    width: 1.5rem;
+    cursor: pointer;
+}
+/* added alarm name */
+.alarms .data_alarm .alarm_name{
+    margin-left: 4rem;
+    /* border: 1px solid red; */
+}
+/* delete added alarm */
+.alarms .data_alarm .alarm_trash{
+    margin-left: 5.5rem;
+    cursor: pointer;
+    width: 1.5rem;
+}
+/* added alarm name */
+.alarms .data_alarm .alarm_name_output{
+    margin-left: 6rem;
+    width: 10rem;
+}

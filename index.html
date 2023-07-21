@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- muted button -->
+        <p id="mute_Text" class="mute_Text">Muted</p>
+        <div class="clock">
+            <!-- <div id="ct-label">Current Time:&nbsp;</div> -->
+            <div id="time">00 00 00</div>
+            <div id="alarm-btn">Add Alarm</div>
+        </div>
+        <!-- add new alarm -->
+        <div class="set_alarm_container">
+            <div class="set_alarm">
+                <label for="alarm_name">Name:</label>
+                <div class="alarm_name"><input id="alarm_name" type="text" maxlength="15" minlength="5"></div> 
+                <label for="alarm_time:">Time:</label>
+                <input type="time" id="alarm_time" class="alarm_time">
+                <div id="del_set_alarm"><i class="bi bi-trash3"></i></div>
+                <div id="submit_alarm"><i class="bi bi-check2"></i></div>
+            </div>
+        </div>
+        <!-- added alarms -->
+        <div class="alarms">
+        <ol id="alarms" class="inner_alarms">
+            <!-- <li id="data-alarm" class="data_alarm">
+                <div id="data-id-1" class="alarm_trash"><i class="bi bi-trash3"></i></div>
+                <div id="alarm-no" class="alarm_no">Alarmingong 1</div>
+                <div id="alarm-time" class="alarm_time">00 : 00 : 00</div>
+                <div id="half" class="half">a.m.</div>
+                <div id="img" data-id="${task.id}" class="stop_alarm"><i class="bi bi-alarm"></i></div>
+            </li> -->
+        </ol>
+    </div> 
+    <script src = "app.js"></script>
+    <script type="text/javascript">
+        alarmClockApp.launchApplication()
+    </script>
+</body>
+</html>
